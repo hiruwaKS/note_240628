@@ -1,10 +1,10 @@
 # modified based on Guahao31's 2024_DD
 
-site_name: note
+site_name: note_240628
 site_dir: public
 site_author: hiruwa KS
-repo_url: https://github.com/hiruwaKS/note
-repo_name: note
+repo_url: https://github.com/hiruwaKS/note_240628
+repo_name: note_240628
 
 theme:
   name: material
@@ -65,15 +65,15 @@ extra_javascript:
 nav:
   - Home: index.md
   - DM: 
-    - Graph Basis: /DM/Graph_Basis.md
+    - Graph Basis: DM/Graph_Basis.md
   - FDS: 
-    - readme.md: /FDS/readme.md
-    - Intro: /FDS/Intro.md
-    - Linear Structure: /FDS/Linear_Structure.md
-    - Tree: /FDS/Tree.md
-    - Hash: /FDS/Hash.md
-    - Heap: /FDS/Heap.md
-    - Sort: /FDS/Sort.md
-    - Union-Find: /FDS/Union-Find.md
-    - Graph: /FDS/Graph.md
-    - Others: /FDS/Others.md
+    - readme.md: FDS/readme.md
+    - Intro: FDS/Intro.md
+    - Linear Structure: FDS/Linear_Structure.md
+    - Tree: FDS/Tree.md
+    - Hash: FDS/Hash.md
+    - Heap: FDS/Heap.md
+    - Sort: FDS/Sort.md
+    - Union-Find: FDS/Union-Find.md
+    - Graph: FDS/Graph.md
+    - Others: FDS/Others.md
