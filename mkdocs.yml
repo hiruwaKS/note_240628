@@ -1,0 +1,79 @@
+# modified based on Guahao31's 2024_DD
+
+site_name: note
+site_dir: public
+site_author: hiruwa KS
+repo_url: https://github.com/hiruwaKS/note
+repo_name: note
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-night
+        name: 暗色模式
+    - media: "(prefers-color-scheme: dark)"
+      primary: teal
+      scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: 亮色模式
+  language: zh
+  features:
+    - content.code.copy
+    # - navigation.tabs
+    - navigation.expand
+    - navigation.top
+    # - navigation.sections
+  icon:
+    repo: fontawesome/brands/git-alt
+    
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - tables
+  - attr_list
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_css:
+  - _css/style.css
+
+extra_javascript:
+  # - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - javascripts/tex-mml-chtml.js
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML
+  # - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+
+nav:
+  - Home: index.md
+  - DM: 
+    - Graph Basis: /DM/Graph_Basis.md
+  - FDS: 
+    - readme.md: /FDS/readme.md
+    - Intro: /FDS/Intro.md
+    - Linear Structure: /FDS/Linear_Structure.md
+    - Tree: /FDS/Tree.md
+    - Hash: /FDS/Hash.md
+    - Heap: /FDS/Heap.md
+    - Sort: /FDS/Sort.md
+    - Union-Find: /FDS/Union-Find.md
+    - Graph: /FDS/Graph.md
+    - Others: /FDS/Others.md
